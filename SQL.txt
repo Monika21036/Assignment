@@ -1,0 +1,161 @@
+1)SELECT ename,job
+  FROM emp
+  WHERE job IN('clerk')
+
+2)SELECT ename,job
+ FROM emp
+ WHERE job='clerk' or job='manager';
+
+3)SELECT getdate() AS 'CURRENT DATE'
+
+4)SELECT ename,sal
+ FROM emp
+ WHERE sal BETWEEN 500 AND 1000
+
+5)SELECT ename,hiredate
+ FROM emp
+ WHERE month(hiredate)='12'
+
+6)SELECT ename,sal
+ FROM emp
+ WHERE sal NOT BETWEEN 1000 AND 2500
+
+7)SELECT ename,sal
+ FROM emp
+ WHERE sal IN(800,950,3000,5000)
+
+8)SELECT ename
+ FROM emp
+ WHERE ename LIKE'_L%'
+
+9)SELECT ename
+ FROM emp
+ WHERE ename LIKE'%D'
+
+10)SELECT ename
+ FROM emp
+ WHERE ename like'_____'
+
+11)SELECT ename
+ FROM emp
+ WHERE ename LIKE'T%R'
+
+12)SELECT ename
+ FROM emp
+ WHERE ename LIKE '%A%'
+
+13)SELECT ename,hiredate
+ FROM emp
+ WHERE day(hiredate)<'19';
+
+14)SELECT ename,empno
+ FROM emp 
+ WHERE ename='James';
+
+15)SELECT ename,sal
+  FROM emp 
+  WHERE ename='King';
+
+16)SELECT ename,job
+ FROM emp 
+ WHERE job='President';
+
+17)SELECT *
+ FROM emp 
+ WHERE job='Manager';
+
+18)SELECT *
+ FROM emp
+ WHERE  comm IS NOT NULL;
+
+19)SELECT ename,hiredate
+ FROM emp
+ WHERE hiredate < ('01-APR-81')
+
+20) 21)
+ SELECT ename,sal
+ FROM emp 
+ where ename IN ('King','Blake','Ford','Smith');
+
+22)
+ SELECT ename,sal
+ FROM emp
+ WHERE sal <3500
+
+23)
+ SELECT *
+ FROM emp 
+ WHERE job='Clerk';
+
+
+24)
+ SELECT ename,sal*12 as 'Annual_salary'
+ FROM emp
+
+25)
+ SELECT ename,sal*12*0.2 as 'Annual_salary'
+ FROM emp
+ WHERE ename= 'FORD'
+
+26)
+ SELECT deptno, SUM(sal) as 'total_salary'
+ FROM emp
+ group by deptno;
+
+27)
+  select ename ,sal, deptno
+  from emp
+  where sal in
+            (select min(sal)
+			from emp
+			where deptno=10)
+
+28)
+ SELECT job, AVG(sal) as 'Average_salary'
+ FROM emp
+ group by job
+ having job='Manager';
+
+
+29)
+ SELECT job, SUM(sal) as 'total_salary'
+ FROM emp
+ group by job
+ having job='salesman';
+
+
+30)
+ select deptno,avg(sal)
+ from emp
+ group by deptno
+ having avg(sal)<
+            (select avg(sal)as lowestsal
+			from emp)
+
+
+31)
+ SELECT job, count(*) as 'no of people'
+ From emp
+ group by job;
+
+32)
+ SELECT job, max(sal) as 'Highest_salary'
+ FROM emp
+ group by job
+ having job='Analyst';
+
+33)
+ SELECT max(comm) as 'highest commission'
+ FROM emp
+
+34)
+ SELECT deptno
+ FROM emp
+ group by deptno;
+
+35)
+ SELECT ename
+ FROM emp
+ WHERE ename LIKE'__L%'
+
+
