@@ -1,0 +1,239 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset0 Cambria;}{\f2\fnil Consolas;}{\f3\fnil\fcharset0 Consolas;}{\f4\fnil\fcharset0 Verdana;}{\f5\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red127\green0\blue85;\red0\green0\blue0;\red0\green0\blue192;\red63\green127\blue95;\red106\green62\blue62;\red42\green0\blue255;\red240\green216\blue168;\red212\green212\blue212;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 1)\f1\fs28 Create student class having stdID , stdName, stdClass and display the information of two objects\par
+\cf1\b\f2\fs20 package\cf2\b0  Day2_Assignment;\cf0\par
+\par
+\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Student \{\cf0\par
+\par
+\cf2\tab\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 stdID\cf2 ;\cf0\par
+\cf2\tab\tab String \cf3 stdName\cf2 ;\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 stdClass\cf2 ;\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf4 //constructor parameter\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab Student( \cf1\b int\cf2\b0  \cf5 id\cf2 ,String \cf5 name\cf2 ,\cf1\b int\cf2\b0  \cf5 c\cf2 )\{\cf0\par
+\cf2\tab\tab\tab\cf1\b this\cf2\b0 .\cf3 stdID\cf2 =\cf5 id\cf2 ;\cf0\par
+\cf2\tab\tab\tab\cf1\b this\cf2\b0 .\cf3 stdName\cf2 =\cf5 name\cf2 ;\cf0\par
+\cf2\tab\tab\tab\cf1\b this\cf2\b0 .\cf3 stdClass\cf2 =\cf5 c\cf2 ;\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  display()\cf0\par
+\cf2\tab\tab\{\cf0\par
+\cf2\tab\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf3 stdID\cf2 );\cf0\par
+\cf2\tab\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf3 stdName\cf2 );\cf0\par
+\cf2\tab\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf3 stdClass\cf2 );\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String \cf5 arg\cf2 []) \{\cf0\par
+\cf2\tab\tab\tab Student \cf5 s1\cf2  = \cf1\b new\cf2\b0  Student(1,\cf6 "Raju"\cf2 ,5);\cf0\par
+\cf2\tab\tab\tab\cf5 s1\cf2 .display();\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\par
+\cf2\tab\tab\tab Student \cf5 s2\cf2  = \cf1\b new\cf2\b0  Student(2,\cf6 "Manu"\cf2 ,10);\cf0\par
+\cf2\tab\tab\tab\cf5 s2\cf2 .display();\cf0\par
+\cf2\tab\tab\}\tab\tab\tab\cf0\par
+\cf2\}\par
+\par
+
+\pard{\pntext\f5\'B7\tab}{\*\pn\pnlvlblt\pnf5\pnindent360{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\f3\lang1033 2)\cf0\f1\fs28\lang9 Create a product class The properties are ProID, ProName, ProPrice display the information and ProPrice will be added additional tax of GST .\par
+
+\pard\sa200\sl276\slmult1\cf1\b\f2\fs20 package\cf2\b0  Day2_Assignment;\cf0\par
+\par
+\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Product \{\cf0\par
+\par
+\cf2\tab\cf1\b int\cf2\b0  \cf3 ProID\cf2 ;\cf0\par
+\cf2\tab String \cf3 ProName\cf2 ;\cf0\par
+\cf2\tab\cf1\b double\cf2\b0  \cf3 ProPrice\cf2 ;\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab Product( \cf1\b int\cf2\b0  \cf5 id\cf2 ,String \cf5 name\cf2 ,\cf1\b double\cf2\b0  \cf5 price\cf2 )\{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 ProID\cf2 =\cf5 id\cf2 ;\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 ProName\cf2 =\cf5 name\cf2 ;\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 ProPrice\cf2 =\cf5 price\cf2 ;\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  display()\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf3 ProID\cf2 );\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf3 ProName\cf2 );\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf3 ProPrice\cf2 );\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b double\cf2\b0  tax(\cf1\b double\cf2\b0  \cf5 GST\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf1\b this\cf2\b0 .\cf3 ProPrice\cf2  + \cf5 GST\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String \cf5 arg\cf2 []) \{\cf0\par
+\cf2\tab\tab Product \cf5 s1\cf2  = \cf1\b new\cf2\b0  Product(143,\cf6 "Bottle"\cf2 ,100);\cf0\par
+\cf2\tab\tab\cf5 s1\cf2 .display();\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf5 s1\cf2 .tax(10));\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\}\cf0\par
+\par
+
+\pard{\pntext\f5\'B7\tab}{\*\pn\pnlvlblt\pnf5\pnindent360{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\f3\lang1033 3)\f1\fs28\lang9 Create a T-Shirt  class with the following fields.\par
+
+\pard\li720\sa200\sl276\slmult1 String color\par
+String material\par
+String design\par
+Create three instances of object based on different sizes like small, large ,  xtra-large.\par
+
+\pard\sa200\sl276\slmult1\cf1\b\f2\fs20 package\cf2\b0  Day2_Assignment;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  TShirt \{\cf0\par
+\cf2  \cf0\par
+\cf2\tab String \cf3 color\cf2 ;\cf0\par
+\cf2\tab String \cf3 material\cf2 ;\cf0\par
+\cf2\tab String \cf3 design\cf2 ;\cf0\par
+\cf2\tab\cf0\par
+\cf1\b public\cf2\b0  TShirt(String \cf5 color\cf2 ,String \cf5 material\cf2 , String \cf5 design\cf2 ) \{\cf0\par
+\cf2     \cf1\b this\cf2\b0 .\cf3 color\cf2 =\cf5 color\cf2 ;\cf0\par
+\cf2     \cf1\b this\cf2\b0 .\cf3 material\cf2 =\cf5 material\cf2 ;\cf0\par
+\cf2     \cf1\b this\cf2\b0 .\cf3 design\cf2 =\cf5 design\cf2 ;\cf0\par
+\cf2\}\cf0\par
+\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  display()\cf0\par
+\cf2\{\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf3 color\cf2 );\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf3 material\cf2 );\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf3 design\cf2 );\cf0\par
+\cf2\}\cf0\par
+\par
+\par
+\par
+\par
+\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String \cf5 args\cf2 []) \{\cf0\par
+\cf2\tab TShirt \cf5 a\cf2 =\cf1\b new\cf2\b0  TShirt(\cf6 "red"\cf2 ,\cf6 "cotton"\cf2 ,\cf6 "small"\cf2 );\cf0\par
+\cf2\tab\cf5 a\cf2 .display();\cf0\par
+\cf2\tab TShirt \cf5 b\cf2 =\cf1\b new\cf2\b0  TShirt(\cf6 "red"\cf2 ,\cf6 "cotton"\cf2 ,\cf6 "large"\cf2 );\cf0\par
+\cf2\tab\cf5 b\cf2 .display();\cf0\par
+\cf2\tab TShirt \cf5 c\cf2 =\cf1\b new\cf2\b0  TShirt(\cf6 "red"\cf2 ,\cf6 "cotton"\cf2 ,\cf6 "xtra large"\cf2 );\cf0\par
+\cf2\tab\cf5 c\cf2 .display();\cf0\par
+\par
+\cf2\}\cf0\par
+\cf2\}\cf0\par
+
+\pard{\pntext\f5\'B7\tab}{\*\pn\pnlvlblt\pnf5\pnindent360{\pntxtb\'B7}}\fi-360\li600\sb100\sa100\sl240\slmult1\tx720\f3\lang1033 4)\cf2\f4\fs18\lang9 Create a super class called Car.\~ The Car class has the following fields and methods.\par
+
+\pard{\pntext\f5\'B7\tab}{\*\pn\pnlvlblt\pnf5\pnindent360{\pntxtb\'B7}}\fi-360\li1320\sb100\sa100\sl240\slmult1\tx1440 int speed;\par
+{\pntext\f5\'B7\tab}double regularPrice;\par
+{\pntext\f5\'B7\tab}String color;\par
+
+\pard\sa200\sl276\slmult1 double getSalePrice();\par
+\par
+\cf1\b\f2\fs20 package\cf2\b0  Day2_Assignment;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Car \{\cf0\par
+\cf2\tab  \cf1\b private\cf2\b0  \cf1\b int\cf2\b0  \cf3\ul speed\cf2\ulnone ;\cf0\par
+\cf2\tab  \cf1\b private\cf2\b0  \cf1\b double\cf2\b0  \cf3 regularPrice\cf2 ;\cf0\par
+\cf2\tab  \cf1\b private\cf2\b0  String \cf3\ul color\cf2\ulnone ;\cf0\par
+\par
+\cf2\tab  \cf1\b public\cf2\b0  Car(\cf1\b int\cf2\b0  \cf5 speed\cf2 , \cf1\b double\cf2\b0  \cf5 regularPrice\cf2 , String \cf5 color\cf2 ) \{\cf0\par
+\cf2\tab  \cf1\b this\cf2\b0 .\cf3 speed\cf2  = \cf5 speed\cf2 ;\cf0\par
+\cf2\tab  \cf1\b this\cf2\b0 .\cf3 regularPrice\cf2  = \cf5 regularPrice\cf2 ;\cf0\par
+\cf2\tab  \cf1\b this\cf2\b0 .\cf3 color\cf2  = \cf5 color\cf2 ;\cf0\par
+\cf2\tab  \}\cf0\par
+\par
+\cf2\tab  \cf1\b public\cf2\b0  \cf1\b double\cf2\b0  getSalePrice() \{\cf0\par
+\cf2\tab  \cf1\b return\cf2\b0  \cf3 regularPrice\cf2 ;\cf0\par
+\cf2\tab  \}\cf0\par
+\cf2\tab\}\par
+
+\pard{\pntext\f5\'B7\tab}{\*\pn\pnlvlblt\pnf5\pnindent360{\pntxtb\'B7}}\fi-360\li600\sb100\sa100\sl240\slmult1\tx720\f3\lang1033 5)\f4\fs18\lang9 Create a subclass of Car class and name it as Truck.\~ The Truck class has the following fields and methods.\par
+
+\pard{\pntext\f5\'B7\tab}{\*\pn\pnlvlblt\pnf5\pnindent360{\pntxtb\'B7}}\fi-360\li1320\sb100\sa100\sl240\slmult1\tx1440 int weight;\par
+{\pntext\f5\'B7\tab}double getSalePrice();\~ // If weight > 2000, 10% discount. Otherwise, 20% discount.\par
+
+\pard\sa200\sl276\slmult1\cf1\b\f2\fs20 package\cf2\b0  Day2_Assignment;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Truck \cf1\b extends\cf2\b0  Car\{\cf0\par
+\par
+\cf2\tab\cf1\b private\cf2\b0  \cf1\b int\cf2\b0  \cf3 weight\cf2 ;\cf0\par
+\par
+\cf2\tab  \cf1\b public\cf2\b0  Truck(\cf1\b int\cf2\b0  \cf5 speed\cf2 , \cf1\b double\cf2\b0  \cf5 regularPrice\cf2 , String \cf5 color\cf2 , \cf1\b int\cf2\b0  \cf5 weight\cf2 ) \{\cf0\par
+\cf2\tab  \cf1\b super\cf2\b0 (\cf5 speed\cf2 , \cf5 regularPrice\cf2 , \cf5 color\cf2 );\cf0\par
+\cf2\tab  \cf1\b this\cf2\b0 .\cf3 weight\cf2  = \cf5 weight\cf2 ;\cf0\par
+\cf2\tab  \}\cf0\par
+\par
+\cf2\tab  \cf1\b public\cf2\b0  \cf1\b double\cf2\b0  getSalePrice() \{\cf0\par
+\cf2\tab  \cf1\b return\cf2\b0  \cf1\b super\cf2\b0 .getSalePrice() * (\cf3 weight\cf2  > 2000 ? 0.90 : 0.80);\cf0\par
+\cf2\tab  \}\cf0\par
+\cf2\}\par
+
+\pard{\pntext\f5\'B7\tab}{\*\pn\pnlvlblt\pnf5\pnindent360{\pntxtb\'B7}}\fi-360\li600\sb100\sa100\sl240\slmult1\tx720\f3\lang1033 6)\f4\fs18\lang9 Create a subclass of Car class and name it as Ford.\~ The Ford class has the following fields and methods\par
+
+\pard{\pntext\f5\'B7\tab}{\*\pn\pnlvlblt\pnf5\pnindent360{\pntxtb\'B7}}\fi-360\li1320\sb100\sa100\sl240\slmult1\tx1440 int year;\par
+{\pntext\f5\'B7\tab}int manufacturerDiscount;\par
+{\pntext\f5\'B7\tab}double getSalePrice();\~ // From the sale price computed from Car class, subtract the manufacturerDiscount.\par
+
+\pard\sa200\sl276\slmult1\cf1\b\f2\fs20 package\cf2\b0  Day2_Assignment;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Ford \cf1\b extends\cf2\b0  Car \{\cf0\par
+\par
+\cf2\tab  \cf1\b private\cf2\b0  \cf1\b int\cf2\b0  \cf3\ul Year\cf2\ulnone ;\cf0\par
+\cf2\tab  \cf1\b public\cf2\b0  \cf1\b int\cf2\b0  \cf3 manufacturerDiscount\cf2 ;\cf0\par
+\par
+\cf2\tab  \cf1\b public\cf2\b0  Ford (\cf1\b int\cf2\b0  \cf5 speed\cf2 , \cf1\b double\cf2\b0  \cf5 regularPrice\cf2 , String \cf5 color\cf2 , \cf1\b int\cf2\b0  \cf5 year\cf2 , \cf1\b int\cf2\b0  \cf5 manufacturerDiscount\cf2 ) \{\cf0\par
+\cf2\tab  \cf1\b super\cf2\b0 (\cf5 speed\cf2 , \cf5 regularPrice\cf2 , \cf5 color\cf2 );\cf0\par
+\cf2\tab  \cf1\b this\cf2\b0 .\cf3 Year\cf2  = \cf5 year\cf2 ;\cf0\par
+\cf2\tab  \cf1\b this\cf2\b0 .\cf3 manufacturerDiscount\cf2  = \cf5 manufacturerDiscount\cf2 ;\cf0\par
+\cf2\tab  \}\cf0\par
+\par
+\cf2\tab  \cf1\b public\cf2\b0  \cf1\b double\cf2\b0  getSalePrice() \{\cf0\par
+\cf2\tab  \cf1\b return\cf2\b0  \cf1\b super\cf2\b0 .getSalePrice() - \cf3 manufacturerDiscount\cf2 ;\cf0\par
+\cf2\tab  \}\cf0\par
+\cf2\}\par
+
+\pard{\pntext\f5\'B7\tab}{\*\pn\pnlvlblt\pnf5\pnindent360{\pntxtb\'B7}}\fi-360\li600\sb100\sa100\sl240\slmult1\tx720\f3\lang1033 7)\f4\fs18\lang9 Create a subclass of Car class and name it as Sedan. The Sedan class has the following fields and methods.\par
+
+\pard{\pntext\f5\'B7\tab}{\*\pn\pnlvlblt\pnf5\pnindent360{\pntxtb\'B7}}\fi-360\li1320\sb100\sa100\sl240\slmult1\tx1440 int length;\par
+{\pntext\f5\'B7\tab}double getSalePrice();\~ // If length > 20 feet, 5% discount, Otherwise, 10% discount.\par
+
+\pard\sa200\sl276\slmult1\cf1\b\f2\fs20 package\cf2\b0  Day2_Assignment;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Sedan \cf1\b extends\cf2\b0  Car \{\cf0\par
+\par
+\cf2\tab\cf1\b private\cf2\b0  \cf1\b int\cf2\b0  \cf3 length\cf2 ;\cf0\par
+\par
+\cf2\tab  \cf1\b public\cf2\b0  Sedan(\cf1\b int\cf2\b0  \cf5 speed\cf2 , \cf1\b double\cf2\b0  \cf5 regularPrice\cf2 , String \cf5 color\cf2 , \cf1\b int\cf2\b0  \cf5 length\cf2 ) \{\cf0\par
+\cf2\tab  \cf1\b super\cf2\b0 (\cf5 speed\cf2 , \cf5 regularPrice\cf2 , \cf5 color\cf2 );\cf0\par
+\cf2\tab  \cf1\b this\cf2\b0 .\cf3 length\cf2  = \cf5 length\cf2 ;\cf0\par
+\cf2\tab  \}\cf0\par
+\par
+\cf2\tab  \cf1\b public\cf2\b0  \cf1\b double\cf2\b0  getSalePrice() \{\cf0\par
+\cf2\tab  \cf1\b return\cf2\b0  \cf1\b super\cf2\b0 .getSalePrice() * (\cf3 length\cf2  > 20 ? 0.95 : 0.90);\cf0\par
+\cf2\tab  \}\cf0\par
+\cf2\tab\}\par
+
+\pard{\pntext\f5\'B7\tab}{\*\pn\pnlvlblt\pnf5\pnindent360{\pntxtb\'B7}}\fi-360\li600\sb100\sa100\sl240\slmult1\tx720\f3\lang1033 8)\f4\fs18\lang9 Create MyOwnAutoShop class which contains the main() method.\~ Perform the following within the main() method.\par
+
+\pard{\pntext\f5\'B7\tab}{\*\pn\pnlvlblt\pnf5\pnindent360{\pntxtb\'B7}}\fi-360\li1320\sb100\sa100\sl240\slmult1\tx1440 Create an instance of Sedan class and initialize all the fields with appropriate values.\~ Use super(...) method in the constructor for initializing the fields of the super class.\par
+{\pntext\f5\'B7\tab}Create two instances of the Ford class and initialize all the fields with appropriate values.\~ Use super(...) method in the constructor for initializing the fields of the super class.\par
+{\pntext\f5\'B7\tab}Create an instance of Car class and and initialize all the fields with appropriate values.\par
+
+\pard\sa200\sl276\slmult1 Display the sale prices of all instance.\par
+\cf1\b\f2\fs20 package\cf2\b0  Day2_Assignment;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  MyOwnAutoShop \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf5 args\cf2 ) \{\cf0\par
+\cf2\tab\tab  Sedan \cf5\highlight7 sedan\cf2\highlight0  = \cf1\b new\cf2\b0  Sedan(500, 500, \cf6 "red"\cf2 , 30);\cf0\par
+\cf2\tab\tab  Ford \cf5 fordOne\cf2  = \cf1\b new\cf2\b0  Ford (300, 300, \cf6 "black"\cf2 , 2021, 35);\cf0\par
+\cf2\tab\tab  Ford  \cf5 fordTwo\cf2  = \cf1\b new\cf2\b0  Ford (250, 250, \cf6 "yellow"\cf2 , 2020, 40);\cf0\par
+\cf2\tab\tab  Car \cf5 car\cf2  = \cf1\b new\cf2\b0  Car(100, 100, \cf6 "white"\cf2 );\cf0\par
+\cf2\tab\tab  System.\cf3\b\i out\cf2\b0\i0 .println(\cf6 "Sedan "\cf2 +\cf5\highlight8 sedan\cf2\highlight0 .getSalePrice());\cf0\par
+\cf2\tab\tab  System.\cf3\b\i out\cf2\b0\i0 .println(\cf6 "fordOne "\cf2 +\cf5 fordOne\cf2 .getSalePrice());\cf0\par
+\cf2\tab\tab  System.\cf3\b\i out\cf2\b0\i0 .println(\cf6 "fordTwo "\cf2 +\cf5 fordTwo\cf2 .getSalePrice());\cf0\par
+\cf2\tab\tab  System.\cf3\b\i out\cf2\b0\i0 .println(\cf6 "car "\cf2 +\cf5 car\cf2 .getSalePrice());\cf0\par
+\cf2\tab\tab  \}\cf0\par
+\cf2\}\par
+\cf0\par
+\f0\fs22\par
+}
+ 
