@@ -1,0 +1,229 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset0 Cambria;}{\f2\fnil Consolas;}{\f3\fnil\fcharset0 Consolas;}{\f4\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red127\green0\blue85;\red0\green0\blue0;\red0\green0\blue192;\red106\green62\blue62;\red100\green100\blue100;\red63\green127\blue95;\red127\green159\blue191;\red42\green0\blue255;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent360{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\f0\fs22\lang9 1)\f1\fs28 Create a Employee class with below properties and methods\par
+
+\pard\li720\sa200\sl276\slmult1 empId, empName,empSal and public void display()\{\} , \par
+public void salCal()\{\} implement the inheritance & polymorphism functionality for Manager ,Developer, Tester class override the SalCal function.\par
+
+\pard\sa200\sl276\slmult1\cf1\b\f2\fs20 package\cf2\b0  Day3_Assignment;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Employee \{\cf0\par
+\cf2\tab  \cf1\b int\cf2\b0  \cf3 empId\cf2 ;\cf0\par
+\cf2\tab String \cf3 empName\cf2 ;\cf0\par
+\cf2\tab  \cf1\b double\cf2\b0  \cf3 empSal\cf2 ;\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  Employee() \{\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  Employee(\cf1\b int\cf2\b0  \cf4 id\cf2 , String \cf4 name\cf2 , \cf1\b double\cf2\b0  \cf4 sal\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf4 id\cf2 =\cf3 empId\cf2 ;\cf0\par
+\cf2\tab\tab\cf4 name\cf2 =\cf3 empName\cf2 ;\cf0\par
+\cf2\tab\tab\cf4 sal\cf2 =\cf3 empSal\cf2 ;\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\}\par
+\par
+\par
+\cf1\b package\cf2\b0  Day3_Assignment;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b interface\cf2\b0  EmpInterface \{\cf0\par
+\cf2     \cf1\b public\cf2\b0  \cf1\b double\cf2\b0  SalCal(\cf1\b double\cf2\b0  \cf4 ta\cf2 , \cf1\b double\cf2\b0  \cf4 hra\cf2 , \cf1\b double\cf2\b0  \cf4 da\cf2 );\cf0\par
+\cf2     \cf1\b public\cf2\b0  \cf1\b void\cf2\b0  display();\cf0\par
+\cf2\}\par
+\par
+\cf1\b package\cf2\b0  Day3_Assignment;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Manager \cf1\b extends\cf2\b0  Employee \cf1\b implements\cf2\b0  EmpInterface \{\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf5 @Override\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b double\cf2\b0  SalCal(\cf1\b double\cf2\b0  \cf4 ta\cf2 , \cf1\b double\cf2\b0  \cf4 hra\cf2 , \cf1\b double\cf2\b0  \cf4 da\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf6 //\cf7\b TODO\cf6\b0  Auto-generated method stub\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf1\b this\cf2\b0 .\cf3 empSal\cf2 +\cf4 ta\cf2 +\cf4 hra\cf2 +\cf4 da\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf5 @Override\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  display() \{\cf0\par
+\cf2\tab\tab\cf6 //\cf7\b TODO\cf6\b0  Auto-generated method stub\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf1\b this\cf2\b0 .\cf3 empId\cf2 );\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf1\b this\cf2\b0 .\cf3 empName\cf2 );\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf1\b this\cf2\b0 .\cf3 empSal\cf2 );\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String \cf4 args\cf2 []) \{\cf0\par
+\cf2\tab\tab Manager \cf4 m1\cf2  = \cf1\b new\cf2\b0  Manager();\cf0\par
+\cf2\tab\tab\cf4 m1\cf2 .\cf3 empId\cf2  = 101;\cf0\par
+\cf2\tab\tab\cf4 m1\cf2 .\cf3 empName\cf2 = \cf8 "sam"\cf2 ;\cf0\par
+\cf2\tab\tab\cf4 m1\cf2 .\cf3 empSal\cf2 = 7890;\cf0\par
+\cf2\tab\tab\cf4 m1\cf2 .display();\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 m1\cf2 .SalCal(10,20,30));\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\}\cf0\par
+\cf1\b package\cf2\b0  Day3_Assignment;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Developer \cf1\b extends\cf2\b0  Employee \cf1\b implements\cf2\b0  EmpInterface\{\cf0\par
+\cf2\tab\cf5 @Override\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b double\cf2\b0  SalCal(\cf1\b double\cf2\b0  \cf4 ta\cf2 ,\cf1\b double\cf2\b0  \cf4 hra\cf2 ,\cf1\b double\cf2\b0  \cf4 da\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf6 // \cf7\b TODO\cf6\b0  Auto-generated method stub\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf1\b this\cf2\b0 .\cf3 empSal\cf2 +\cf4 ta\cf2 +\cf4 hra\cf2 +\cf4 da\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf5 @Override\cf0\par
+\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  display() \{\cf0\par
+\cf2\tab\cf6 // \cf7\b TODO\cf6\b0  Auto-generated method stub\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf1\b this\cf2\b0 .\cf3 empId\cf2 );\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf1\b this\cf2\b0 .\cf3 empName\cf2 );\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf1\b this\cf2\b0 .\cf3 empSal\cf2 );\cf0\par
+\cf2\}\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String \cf4 args\cf2 []) \{\cf0\par
+\cf2\tab Developer \cf4 d1\cf2 =\cf1\b new\cf2\b0  Developer();\cf0\par
+\cf2\tab\cf4 d1\cf2 .\cf3 empId\cf2 =101;\cf0\par
+\cf2\tab\cf4 d1\cf2 .\cf3 empName\cf2 =\cf8 "Blake"\cf2 ;\cf0\par
+\cf2\tab\cf4 d1\cf2 .\cf3 empSal\cf2 =30000;\cf0\par
+\cf2\tab\cf4 d1\cf2 .display();\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 d1\cf2 .SalCal(10,20,30));\cf0\par
+\cf2\tab\cf0\par
+\cf2\}\cf0\par
+\cf2\}\par
+\par
+\cf1\b package\cf2\b0  Day3_Assignment;\cf0\par
+\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Tester \cf1\b extends\cf2\b0  Employee \cf1\b implements\cf2\b0  EmpInterface \{\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf5 @Override\cf0\par
+\cf2\tab\tab\cf1\b public\cf2\b0  \cf1\b double\cf2\b0  SalCal(\cf1\b double\cf2\b0  \cf4 ta\cf2 , \cf1\b double\cf2\b0  \cf4 hra\cf2 , \cf1\b double\cf2\b0  \cf4 da\cf2 ) \{\cf0\par
+\cf2\tab\tab\tab\cf6 //\cf7\b TODO\cf6\b0  Auto-generated method stub\cf0\par
+\cf2\tab\tab\tab\cf1\b return\cf2\b0  \cf1\b this\cf2\b0 .\cf3 empSal\cf2 +\cf4 ta\cf2 +\cf4 hra\cf2 +\cf4 da\cf2 ;\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf5 @Override\cf0\par
+\cf2\tab\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  display() \{\cf0\par
+\cf2\tab\tab\tab\cf6 //\cf7\b TODO\cf6\b0  Auto-generated method stub\cf0\par
+\cf2\tab\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf1\b this\cf2\b0 .\cf3 empId\cf2 );\cf0\par
+\cf2\tab\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf1\b this\cf2\b0 .\cf3 empName\cf2 );\cf0\par
+\cf2\tab\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf1\b this\cf2\b0 .\cf3 empSal\cf2 );\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\}\cf0\par
+\par
+\cf2\tab\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String \cf4 args\cf2 []) \{\cf0\par
+\cf2\tab\tab\tab Tester \cf4 t1\cf2  = \cf1\b new\cf2\b0  Tester();\cf0\par
+\cf2\tab\tab\tab\cf4 t1\cf2 .\cf3 empId\cf2  = 109;\cf0\par
+\cf2\tab\tab\tab\cf4 t1\cf2 .\cf3 empName\cf2 = \cf8 "man"\cf2 ;\cf0\par
+\cf2\tab\tab\tab\cf4 t1\cf2 .\cf3 empSal\cf2 = 73490;\cf0\par
+\cf2\tab\tab\tab\cf4 t1\cf2 .display();\cf0\par
+\cf2\tab\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 t1\cf2 .SalCal(10,20,30));\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\par
+\f0\fs22 2)\f1\fs28 Create a Shape class to draw a diagram like rectangle, square, triangle , with same properties like length , height, width and calculate the radius  of it by overriding the method in respective class \par
+\par
+\cf1\b\f2\fs20 package\cf2\b0  Day3_Assignment;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Shape \{\cf0\par
+\cf2\tab\cf1\b float\cf2\b0  \cf3 length\cf2 ;\cf0\par
+\cf2\tab\cf1\b float\cf2\b0  \cf3 width\cf2 ;\cf0\par
+\cf2\tab\cf1\b float\cf2\b0  \cf3 height\cf2 ;\cf0\par
+\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  Shape() \{\};\cf0\par
+\cf2\tab  \cf1\b public\cf2\b0  Shape(\cf1\b float\cf2\b0  \cf4 len\cf2 , \cf1\b float\cf2\b0  \cf4 wi\cf2 , \cf1\b float\cf2\b0  \cf4 he\cf2 ) \{\cf0\par
+\cf2\tab  \cf1\b this\cf2\b0 .\cf3 length\cf2 =\cf4 len\cf2 ;\cf0\par
+\cf2\tab  \cf1\b this\cf2\b0 .\cf3 width\cf2 =\cf4 wi\cf2 ;\cf0\par
+\cf2\tab  \cf1\b this\cf2\b0 .\cf3 height\cf2 =\cf4 he\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\}\par
+\par
+\cf1\b package\cf2\b0  Day3_Assignment;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b interface\cf2\b0  Shape_Interface \{\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b float\cf2\b0  area(\cf1\b float\cf2\b0  \cf4 len\cf2 ,\cf1\b float\cf2\b0  \cf4 wi\cf2 ,\cf1\b float\cf2\b0  \cf4 he\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\f0\fs22\par
+\par
+\cf1\b\f2\fs20 package\cf2\b0  Day3_Assignment;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Rectangle \cf1\b extends\cf2\b0  Shape \cf1\b implements\cf2\b0  Shape_Interface\{\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab Rectangle()\{\};\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf5 @Override\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b float\cf2\b0  area(\cf1\b float\cf2\b0  \cf4 len\cf2 ,\cf1\b float\cf2\b0  \cf4 wi\cf2 ,\cf1\b float\cf2\b0  \cf4 he\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf4 len\cf2 *\cf4 wi\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String \cf4 args\cf2 []) \{\cf0\par
+\cf2\tab\tab Rectangle \cf4 r1\cf2 =\cf1\b new\cf2\b0  Rectangle();\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println( \cf8 "Area of Rectangle is:"\cf2 + \cf4 r1\cf2 .area(10, 20, 0));\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\}\cf0\par
+\f0\fs22\par
+\par
+\cf1\b\f2\fs20 package\cf2\b0  Day3_Assignment;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Triangle \cf1\b extends\cf2\b0  Shape \cf1\b implements\cf2\b0   Shape_Interface \{\cf0\par
+\par
+\cf2 Triangle()\{\};\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf5 @Override\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b float\cf2\b0  area(\cf1\b float\cf2\b0  \cf4 len\cf2 ,\cf1\b float\cf2\b0  \cf4 wi\cf2 ,\cf1\b float\cf2\b0  \cf4 he\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  ((\cf4 len\cf2 *\cf4 he\cf2 )/2);\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String \cf4 args\cf2 []) \{\cf0\par
+\cf2\tab\tab Triangle \cf4 t1\cf2 =\cf1\b new\cf2\b0  Triangle();\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println( \cf8 "Area of Triangle  is:"\cf2 + \cf4 t1\cf2 .area(10, 20, 30));\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\}\par
+\par
+\cf1\b package\cf2\b0  Day3_Assignment;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Square  \cf1\b extends\cf2\b0  Shape \cf1\b implements\cf2\b0  Shape_Interface\{\cf0\par
+\par
+\cf2\tab Square()\{\};\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf5 @Override\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b float\cf2\b0  area(\cf1\b float\cf2\b0  \cf4 len\cf2 ,\cf1\b float\cf2\b0  \cf4 wi\cf2 ,\cf1\b float\cf2\b0  \cf4 he\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf4 len\cf2 *\cf4 len\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String \cf4 args\cf2 []) \{\cf0\par
+\cf2\tab\tab Square \cf4 s1\cf2 =\cf1\b new\cf2\b0  Square();\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println( \cf8 "Area of Square is:"\cf2 + \cf4 s1\cf2 .area(10, 0, 0));\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\par
+\par
+\f3\lang1033 3)\f2  \cf0\par
+\cf2\tab  \cf1\b class\cf2\b0  \ul MyOwnException\ulnone   \cf1\b extends\cf2\b0  Exception\{\cf0\par
+\cf2\tab\tab  MyOwnException (String \cf4 s\cf2 )\{\cf0\par
+\cf2\tab\tab\tab  \cf1\b super\cf2\b0 (\cf4 s\cf2 );\cf0\par
+\cf2\tab\tab  \}\cf0\par
+\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  \ul salary_exception\ulnone  \cf1\b extends\cf2\b0  Employee\{\cf0\par
+\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab  \cf1\b public\cf2\b0  \cf1\b double\cf2\b0  salCal(\cf1\b double\cf2\b0  \cf4 TA\cf2 , \cf1\b double\cf2\b0  \cf4 HRA\cf2 , \cf1\b double\cf2\b0  \cf4 DA\cf2 ) \cf1\b throws\cf2\b0  MyOwnException  \{ \cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab    \cf1\b if\cf2\b0 ((\cf1\b this\cf2\b0 .\ul EmpSal\ulnone +\cf4 TA\cf2 +\cf4 HRA\cf2 +\cf4 DA\cf2 )*12 <100000)\cf0\par
+\cf2\tab\tab\tab    \cf1\b throw\cf2\b0  \cf1\b new\cf2\b0  MyOwnException(\cf8 "Annual Salary is less than One Lakh"\cf2 );\cf0\par
+\cf2\tab\tab    \cf1\b else\cf0\b0\par
+\cf2\tab\tab\tab    System.\cf3\b\i out\cf2\b0\i0 .println(\cf8 "Annual Salary is greater than One Lakh"\cf2 );\cf0\par
+\cf2\tab\tab    \cf1\b return\cf2\b0  (\cf1\b this\cf2\b0 .\ul EmpSal\ulnone +\cf4 TA\cf2 +\cf4 HRA\cf2 +\cf4 DA\cf2 )*12 ;\cf0\par
+\cf2\tab\tab\tab    \}\cf0\par
+\par
+\cf2\tab\tab  \cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\tab    \cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String \cf4 args\cf2 []) \cf1\b throws\cf2\b0  MyOwnException \{\cf0\par
+\cf2\tab\tab\tab\tab    salary_exception \cf4 s1\cf2 = \cf1\b new\cf2\b0   salary_exception();\cf0\par
+\cf2\tab\tab\tab\tab    System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 s1\cf2 .salCal(1000, 1000, 1000));\cf0\par
+\cf2\tab\tab\tab\tab   \cf0\par
+\cf2\tab\tab\tab    \}\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\ul\}\cf0\ulnone\par
+\cf2\f3\par
+}
+ 
